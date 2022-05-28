@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cars System</string>
+    <string name="add_car">Add Car</string>
+    <string name="exit">Exit</string>
+    <string name="model">Model:</string>
+    <string name="plate">Plate</string>
+    <string name="price">Price</string>
+    <string name="year">Year</string>
+    <string name="aaa1234">AAA1234</string>
+    <string name="gmc">GMC</string>
+    <string name="_120000">120000</string>
+    <string name="_2022">2022</string>
+    <string name="clear_car">Clear</string>
+    <string name="car_info">Car Info</string>
+    <string name="delete_car">Delete</string>
+    <string name="update_car">Update</string>
+
+</resources>

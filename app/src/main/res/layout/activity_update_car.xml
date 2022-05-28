@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?><androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateCar">
+
+    <TextView
+        android:id="@+id/tv1Search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Plate Number to search"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_border"
+        />
+
+    <EditText
+        android:id="@+id/ed1Search"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1Search"
+        app:layout_constraintBottom_toTopOf="@id/updateCet1"
+        android:background="@drawable/textview_border"
+        android:layout_marginTop="20dp"
+        android:hint="@string/aaa1234"
+        />
+
+    <Button
+        android:id="@+id/searchB"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/ed1Search"
+        app:layout_constraintTop_toBottomOf="@id/tv1Search"
+        android:text="Search"
+        android:gravity="center_horizontal|center_vertical"
+        style="@style/style3"
+        />
+
+    <TextView
+        android:id="@+id/updateCtv1"
+        style="@style/style1"
+        app:layout_constraintTop_toBottomOf="@+id/ed1Search"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/model"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/updateCtv2"
+        style="@style/style1"
+        app:layout_constraintTop_toBottomOf="@id/updateCtv1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/plate"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/updateCtv3"
+        style="@style/style1"
+        app:layout_constraintTop_toBottomOf="@id/updateCtv2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/price"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/updateCtv4"
+        style="@style/style1"
+        app:layout_constraintTop_toBottomOf="@id/updateCtv3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/year"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/updateCet1"
+        style="@style/style2"
+        android:hint="@string/gmc"
+        app:layout_constraintStart_toEndOf="@id/updateCtv1"
+        app:layout_constraintTop_toBottomOf="@+id/ed1Search"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/updateCet2"
+        style="@style/style2"
+        android:hint="@string/aaa1234"
+        app:layout_constraintStart_toEndOf="@id/updateCtv2"
+        app:layout_constraintTop_toBottomOf="@id/updateCet1"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/updateCet3"
+        style="@style/style2"
+        android:hint="@string/_120000"
+        app:layout_constraintStart_toEndOf="@id/updateCtv3"
+        app:layout_constraintTop_toBottomOf="@id/updateCet2"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/updateCet4"
+        style="@style/style2"
+        android:hint="@string/_2022"
+        app:layout_constraintStart_toEndOf="@id/updateCtv4"
+        app:layout_constraintTop_toBottomOf="@id/updateCet3"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/updateCtv4"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <Button
+            android:id="@+id/updateBUpdateAct"
+            style="@style/style3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/update_car"
+            android:drawableEnd="@drawable/updatecar"
+            android:layout_marginTop="0dp"
+            />
+
+        <Button
+            android:id="@+id/clearBUpdateAct"
+            style="@style/style3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/clear_car"
+            android:drawableEnd="@drawable/clearb"
+            android:layout_marginTop="0dp"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

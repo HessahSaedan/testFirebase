@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/addB"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/add_car"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/teal_200"
+        android:drawableEnd="@drawable/addcar"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/deletB"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addB"
+        android:text="@string/delete_car"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/teal_200"
+        android:drawableEnd="@drawable/deletecar"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/updateB"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deletB"
+        android:text="@string/update_car"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/teal_200"
+        android:drawableEnd="@drawable/updatecar"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/exitB"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/updateB"
+        android:text="@string/exit"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/teal_200"
+        android:drawableEnd="@drawable/exitapp"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

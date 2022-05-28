@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addCar">
+
+    <TextView
+        android:id="@+id/addCtv1"
+        style="@style/style1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/model"
+        />
+
+    <TextView
+        android:id="@+id/addCtv2"
+        style="@style/style1"
+        app:layout_constraintTop_toBottomOf="@id/addCtv1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/plate"
+        />
+
+    <TextView
+        android:id="@+id/addCtv3"
+        style="@style/style1"
+        app:layout_constraintTop_toBottomOf="@id/addCtv2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/price"
+        />
+
+    <TextView
+        android:id="@+id/addCtv4"
+        style="@style/style1"
+        app:layout_constraintTop_toBottomOf="@id/addCtv3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/year"
+        />
+
+    <EditText
+        android:id="@+id/addCet1"
+        style="@style/style2"
+        android:hint="@string/gmc"
+        app:layout_constraintStart_toEndOf="@id/addCtv1"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/addCet2"
+        style="@style/style2"
+        android:hint="@string/aaa1234"
+        app:layout_constraintStart_toEndOf="@id/addCtv2"
+        app:layout_constraintTop_toBottomOf="@id/addCet1"
+        />
+
+    <EditText
+        android:id="@+id/addCet3"
+        style="@style/style2"
+        android:hint="@string/_120000"
+        app:layout_constraintStart_toEndOf="@id/addCtv3"
+        app:layout_constraintTop_toBottomOf="@id/addCet2"
+        />
+
+    <EditText
+        android:id="@+id/addCet4"
+        style="@style/style2"
+        android:hint="@string/_2022"
+        app:layout_constraintStart_toEndOf="@id/addCtv4"
+        app:layout_constraintTop_toBottomOf="@id/addCet3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/addCtv4"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <Button
+            android:id="@+id/addBAddAct"
+            style="@style/style3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/add_car"
+            android:drawableEnd="@drawable/addcar"
+             />
+
+        <Button
+            android:id="@+id/clearBAddAct"
+            style="@style/style3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/clear_car"
+            android:drawableEnd="@drawable/clearb"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
